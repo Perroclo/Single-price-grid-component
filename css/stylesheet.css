@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Karla', sans-serif;
+}
+
+:root{
+
+--color-azulturquesa:hsl(179, 62%, 43%);
+--color-moradoclaro:hsl(218, 22%, 67%);
+--color-lightgray:hsl(204, 43%, 93%);
+--color-amarillobrillante:hsl(71, 73%, 54%);
+--color-azulmasclaro:hsl(179, 62%, 49%);
+
+}
+
+body{
+
+background-color: var(--color-lightgray);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+
+display: grid;
+grid-template-rows:236px 236px 236px;
+grid-template-columns: 1fr;
+justify-content: center;
+padding-right: 30px;
+padding-left: 30px;
+
+}
+
+.caja1{
+	padding: 25px;
+	background: white;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.caja2{
+background: var(--color-azulturquesa);
+padding: 25px;
+}
+
+.caja3{
+
+background: var(--color-azulmasclaro) ;
+border-radius: 0px 0px 5px 5px;
+padding: 25px;
+padding-right: 123px;
+}
+
+.titulo1{
+
+color:hsl(179, 62%, 43%);
+font-size: 19px;
+}
+
+.titulo2{
+color: hsl(71, 73%, 54%);
+font-size: 14px;
+margin-top: 17px;
+padding-right:10px;
+}
+
+.contenido1{
+
+color:gray;
+margin-top: 13px;
+font-weight: 400;
+font-size: 13px;
+line-height: 1.7;
+}
+
+.titulo3{
+
+color:white;
+font-size: 19px;
+margin-bottom: 13px;
+
+}
+
+.titulo4{
+color: white;
+font-size: 14px;
+margin-top: 14px;
+font-weight: 100;
+}
+
+.veintinueve{
+
+
+font-size: 29px;
+color: white;
+
+}	
+
+.month{
+
+color: lightgray;
+
+}
+
+.sign{
+
+border-radius: 5px;
+background-color:hsl(71, 73%, 54%);
+width: 260px;
+height: 50px;
+margin-top: 23px;
+color: white;
+border:none;
+font-size: 16px;
+box-shadow: 0px 1px 10px -3px black;	
+
+
+}
+
+
+.titulo5{
+color:white;
+font-size: 19px;
+margin-bottom: 13px;
+
+
+}
+
+.tutoriales{
+
+    color: lightgray;
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+
+
+}
+
+.attribution{
+
+	font-size: 10px;
+}
+
+.sign:hover{
+
+cursor: pointer;
+transition: all .3s ease-in-out;
+color: black;
+background-color: yellow;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1440px){
+
+.container{
+display: grid;
+grid-template-rows: 220px 220px;	
+grid-template-columns: 310px 310px;
+
+
+}
+
+.caja1{
+
+grid-column: 1/3;
+align-self:flex-end;
+height: 136px;
+
+}
+
+.caja2{
+
+height:182px;
+
+}
+
+.caja3{
+
+height: 182px;
+
+}
+
+.attribution{
+position: relative;
+top: 18px;
+
+}
+
+.contenido1{
+
+	font-size: 16px;
+}
+
+}
+
